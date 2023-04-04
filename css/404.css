@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+button {
+  width: 254px;
+  height: 56px;
+  background: #37d09d;
+  border-radius: 4px;
+  color: #fafafa;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  cursor: pointer;
+}
+button:hover {
+  background: #06885d;
+  color:black
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  margin-bottom: 190px;
+}
+.exception {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  width: 100vw;
+  padding-top: 60px;
+}
+.exception h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 100px;
+  line-height: 115px;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+.exception p {
+  position: relative;
+  top: -50px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+canvas {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  width: 100vw;
+  height:100%;
+  z-index: -1;
+}

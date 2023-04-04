@@ -1,0 +1,236 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+.slider {
+  overflow-x: hidden;
+  margin: 30px 105px 0 135px;
+}
+.slider img {
+  display: none;
+  object-fit: contain;
+  width: 100%;
+}
+
+.slider img.active {
+  display: block;
+}
+.flash-sale-container {
+  display: grid;
+  justify-content: space-between;
+  margin: 120px 105px 0 135px;
+  align-items: stretch;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.flash-sale-container p {
+  margin-bottom: 0;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.04em;
+}
+.countdown-container {
+  order: 1;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+.countdown-container img {
+  order: 1;
+  width: 110px;
+  height: auto;
+}
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 38px;
+  padding-left: 87px;
+  background-color: white;
+  color: black;
+}
+
+.countdown div {
+  flex-direction: column;
+}
+
+.countdown h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  /* or 94% */
+  letter-spacing: 0.04em;
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+.countdown span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 10px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.buttons-container {
+  display: flex;
+  margin-left: auto;
+  order: 1;
+  align-items: end;
+}
+.button-previous,
+.button-next, .button-scroll-up {
+  width: 47px;
+  height: 47px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  /* z-index: 1; */
+}
+.button-previous {
+  background-image: url("../img/arrow-previous.png");
+  background-size: 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.button-next {
+  background-image: url("../img/arrow-next.png");
+  background-size: 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button-scroll-up {
+  background-image: url("../img/Scroll-up.png");
+  background-size: 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.button-previous:hover,
+.button-next:hover,
+.button-scroll-up:hover {
+  background-color: #37d09d;
+}
+.category {
+  padding: 60px 105px 0px 135px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  width: 100%;
+  height: auto;
+  grid-gap: 30px;
+}
+.category-detail {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 170px;
+  height: 145px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.category-detail h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  position: relative;
+  top: 8px;
+}
+.category-detail:hover {
+  background-color: #37D09D;
+}
+.category-detail:hover h3 {
+  color: #fafafa;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 7px
+}
+.product-1 {
+  background-image: url("../img/Cellphone.png");
+}
+.product-2 {
+  background-image: url("../img/Computer.png");
+}
+.product-3 {
+  background-image: url("../img/SmartWatch.png");
+}
+.product-4 {
+  background-image: url("../img/Camera.png");
+}
+.product-5 {
+  background-image: url("../img/Headphone.png");
+}
+.product-6 {
+  background-image: url("../img/Gamepad.png");
+}
+.view-all-button {
+  width: 159px;
+  height: 56px;
+  background: #37d09d;
+  border-radius: 4px;
+  border: none;
+  color: #fafafa;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.view-all-button:hover {
+  background: #07ba7e;
+  color:azure;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button-scroll-up-container{
+  width: 100vw;
+  padding-right: 89px;
+  display:flex;
+  align-items: center;
+  justify-content: end;
+}
