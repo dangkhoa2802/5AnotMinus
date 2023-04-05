@@ -208,6 +208,7 @@ table {
 }
 .product-table {
   padding: 50px 105px 0 135px;
+  display: flex;
 }
 .product-table h3 {
   font-family: "Poppins";
