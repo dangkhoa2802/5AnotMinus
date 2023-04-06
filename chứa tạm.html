@@ -1,29 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
-</body>
-</head>
-
-<body>
+  </head>
+  <body>
     <style>
+      .check-out-form .check-out-method {
+        width: 50%;
+        padding-right: 240px;
+      }
+      .product {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .product img {
+        margin-right: 24px;
+      }
+
+      .price {
+        flex-grow: 1;
+        text-align: right;
+      }
     </style>
-   
-    <h2>KHÔNG CHO THAY ĐỔI ĐÂU</h2>
-
-    <script>
-       
-
-    </script>
-</body>
-
+    <div class="check-out-method">
+      <table>
+        <tr>
+          <td class="product">
+            <img
+              src="img/github.jpg"
+              alt="Product Image"
+              width="49"
+              height="43"
+            />
+            <p>LCD Monitor</p>
+          </td>
+          <td class="price">$650</td>
+        </tr>
+        <tr>
+          <td class="product">
+            <img
+              src="img/github.jpg"
+              alt="Product Image"
+              width="49"
+              height="43"
+            />
+            <p>H1 Gamepad</p>
+          </td>
+          <td class="price">$1100</td>
+        </tr>
+        <tr>
+          <td>Subtotal:</td>
+          <td class="price">$1750</td>
+        </tr>
+        <tr>
+          <td>Shipping:</td>
+          <td class="price">Free</td>
+        </tr>
+        <tr>
+          <td>Total:</td>
+          <td class="price">$1750</td>
+        </tr>
+      </table>
+    </div>
+  </body>
 </html>

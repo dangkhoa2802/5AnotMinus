@@ -283,6 +283,7 @@ ul {
   text-decoration: none;
   color: #FFFFFF;
   align-items: center;
+  justify-items: center;
   transition: all 0.25s ease-in-out;
 }
 
