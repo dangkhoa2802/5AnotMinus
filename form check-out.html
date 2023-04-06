@@ -26,12 +26,19 @@
       rel="stylesheet"
       href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script
       src="https://kit.fontawesome.com/07d5fb8cf6.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="css/form-checkout.css">
+    <link rel="stylesheet" href="css/form-checkout.css" />
   </head>
 
   <body>
@@ -134,6 +141,7 @@
               <td class="cart-product">TRAI DEP PHU YEN</td>
               <td class="price">Tặng kèm</td>
             </tr>
+            
           </td>
           <td>
             <tr style="border-bottom: 2.3px solid #ccc">
@@ -163,7 +171,15 @@
             checked
             style="margin-right: 12px"
           />
-          <label for="bank">Bank transfer</label><br />
+          <label for="bank">
+            <i style="color: #02db67" class="fab fa-cc-discover"></i>
+            <i style="color: #dbca23" class="fab fa-cc-amex"></i>
+            <i style="color: #0d8fdb" class="fab fa-cc-paypal"></i>
+            <i style="color: #db3523" class="fab fa-cc-mastercard"></i>
+            <i style="color: #3500db" class="fab fa-cc-visa"></i>
+            Bank transfer
+          </label>
+          <br />
           <input
             type="radio"
             name="payment"
@@ -175,7 +191,6 @@
         </div>
         <!-- End payment options -->
         <button>Place Order</button>
-        
       </div>
       <!-- End div check-out-method -->
     </div>

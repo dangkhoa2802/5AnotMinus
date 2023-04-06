@@ -1,93 +1,107 @@
 body {
-        font-family: "Poppins", sans-serif;
-        box-sizing: border-box;
-      }
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
 
-      label {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #000000;
-        margin-bottom: 8px;
-      }
-      a {
-        text-decoration: none;
-      }
-      input[type="text"],
-      input[type="email"],
-      input[type="tel"] {
-        min-width: 470px;
-        min-height: 40px;
-      }
-      input[type="checkbox"] {
-        width: 24px;
-        height: 24px;
-      }
-      .form-group {
-        margin-top: 25px;
-      }
+label {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+a {
+  text-decoration: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  min-width: 470px;
+  min-height: 40px;
+}
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+.form-group {
+  margin-top: 25px;
+}
 
-      .checkbox label {
-        display: flex;
-        align-items: center;
-        padding-top: 24px;
-      }
+.checkbox label {
+  display: flex;
+  align-items: center;
+  padding-top: 24px;
+}
 
-      .checkbox label input[type="checkbox"] {
-        margin-right: 10px;
-      }
+.checkbox label input[type="checkbox"] {
+  margin-right: 10px;
+}
 
-      .check-out-form {
-        display: flex;
-      }
-      .check-out-form .check-out-information {
-        width: 50%;
-        white-space: nowrap;
-      }
-      .check-out-form .check-out-method {
-        padding: 0px 200px 0 10px;
-      }
-      .check-out-method table td {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 24px;
-        padding-top: 27px;
-        white-space: nowrap;
-      }
-      .check-out-method table {
-        display: flex;
-      }
-      .cart-product-name {
-        padding-left: 4px;
-        font-family: "Poppins";
-      }
-      .price {
-        padding-left: 187px;
-        flex-grow: 1;
-        text-align: right;
-      }
-      .payment-options {
-        margin-top: 24px;
-      }
-      input [type="radio"] {
-        width: 240px;
-        height: 24px;
-      }
-      button {
-        width: 190px;
-        height: 50px;
-        background: #37d09d;
-        border-radius: 4px;
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        color: #fafafa;
-        margin-top: 20px;
-        float: right;
-      }
+.check-out-form {
+  display: flex;
+}
+.check-out-form .check-out-information {
+  width: 50%;
+  white-space: nowrap;
+}
+.check-out-form .check-out-method {
+  padding: 0px 200px 0 10px;
+}
+.check-out-method table td {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding-top: 27px;
+  white-space: nowrap;
+}
+.check-out-method table {
+  display: flex;
+}
+.cart-product-name {
+  padding-left: 4px;
+  font-family: "Poppins";
+}
+.price {
+  padding-left: 187px;
+  flex-grow: 1;
+  text-align: right;
+}
+.payment-options {
+  margin-top: 24px;
+}
+input [type="radio"] {
+  width: 240px;
+  height: 24px;
+}
+button {
+  width: 190px;
+  height: 50px;
+  background: #37d09d;
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fafafa;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: right;
+}
+button:hover {
+  background: #07ba7e;
+  color: azure;
+}
+.check-out-form i {
+  font-size: 34px;
+  margin-right: 6px;
+  float: right;
+  transform: translateX(550%);
+}
+.check-out-form i:hover {
+  cursor: pointer;
+}
