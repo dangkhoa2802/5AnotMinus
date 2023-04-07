@@ -8,6 +8,7 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
 <body>
+  <div data-include="header.html"></div>
   <div class="container">
     <div class="content">
       <div class="left-side">
@@ -18,9 +19,8 @@
           <div class="text-two">Thu Duc City, Ho Chi Minh City.</div>
         </div>
         <div class="phone details">
-          <i class="fas fa-phone-alt"></i>
+          <a href="tel:0398556965"><i class="fas fa-phone-alt"></i></a>
           <div class="topic">Call to us</div>
-          <div class="text-one">0345439724</div>
           <div class="text-two">We are available 24/7,</div>
           <div class="text-two"> 7 days a week.</div>
         </div>
@@ -39,7 +39,7 @@
           <input type="text" placeholder="Enter your name">
         </div>
         <div class="input-box-email">
-          <input type="text" placeholder="Enter your message">
+          <input type="email" id="email" name="email" placeholder="Enter your message">
         </div>
         <div class="button">
           <input type="button" value="Send Now" >
@@ -47,6 +47,8 @@
       </form>
     </div>
     </div>
+    <div data-include="footer.html"></div>
+    <!-- <script src="js/header-footer.js"></script> -->
 </body>
 </html>
 

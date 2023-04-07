@@ -16,7 +16,7 @@ const hours = countdown.querySelector(".hours h1");
 const minutes = countdown.querySelector(".minutes h1");
 const seconds = countdown.querySelector(".seconds h1");
 
-const endDate = new Date("2023-04-09T00:00:00").getTime();
+const endDate = new Date("2023-04-15T00:00:00").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();

@@ -20,64 +20,25 @@
   </head>
   <body>
     <style>
-      .check-out-form .check-out-method {
-        width: 50%;
-        padding-right: 240px;
-      }
-      .product {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+      textarea {
+        height: 200px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 16px;
+        background: #f0f1f8;
+        border-radius: 6px;
+        padding: 50px 15px 0 15px; /* Giá trị padding-top là 50px */
+        line-height: 200px; /* Giá trị line-height bằng chiều cao của text area */
+        vertical-align: top; /* Đưa văn bản nhập vào lên đầu text area */
       }
 
-      .product img {
-        margin-right: 24px;
-      }
-
-      .price {
-        flex-grow: 1;
-        text-align: right;
+      ::placeholder {
+        font-size: 16px;
+        color: #999;
       }
     </style>
-    <div class="check-out-method">
-      <table>
-        <tr>
-          <td class="product">
-            <img
-              src="img/github.jpg"
-              alt="Product Image"
-              width="49"
-              height="43"
-            />
-            <p>LCD Monitor</p>
-          </td>
-          <td class="price">$650</td>
-        </tr>
-        <tr>
-          <td class="product">
-            <img
-              src="img/github.jpg"
-              alt="Product Image"
-              width="49"
-              height="43"
-            />
-            <p>H1 Gamepad</p>
-          </td>
-          <td class="price">$1100</td>
-        </tr>
-        <tr>
-          <td>Subtotal:</td>
-          <td class="price">$1750</td>
-        </tr>
-        <tr>
-          <td>Shipping:</td>
-          <td class="price">Free</td>
-        </tr>
-        <tr>
-          <td>Total:</td>
-          <td class="price">$1750</td>
-        </tr>
-      </table>
-    </div>
+
+    <textarea placeholder="Enter your message"></textarea>
   </body>
 </html>
