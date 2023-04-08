@@ -54,6 +54,7 @@ body {
   font-size: 30px;
   color: #37d09d;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .content .left-side .details .topic {
   font-size: 18px;
@@ -61,6 +62,7 @@ body {
 }
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
+ 
   text-decoration: none;
   font-size: 14px;
   color: #afafb6;
@@ -183,4 +185,26 @@ body {
     width: 100%;
     margin-left: 0;
   }
+}
+
+/* Thêm hiệu ứng rung lắc cho icon */
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Thiết lập animation cho icon */
+.fas.fa-phone-alt:hover, 
+.fas.fa-envelope:hover,
+.fas.fa-map-marker-alt {
+  animation: shake 1.5s;
+  transform-origin: center;
+  transform: rotate(5deg);
 }
