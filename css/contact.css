@@ -61,6 +61,7 @@ body {
 }
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
+  text-decoration: none;
   font-size: 14px;
   color: #afafb6;
 }
