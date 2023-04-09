@@ -150,7 +150,7 @@ body {
   transition: all 0.2s ease;
 }
 .button input[type="button"]:hover {
-  background: #7bd8b9;
+  background: #086546;
 }
 
 @media (max-width: 950px) {
@@ -203,7 +203,7 @@ body {
 /* Thiết lập animation cho icon */
 .fas.fa-phone-alt:hover, 
 .fas.fa-envelope:hover,
-.fas.fa-map-marker-alt {
+.fas.fa-map-marker-alt:hover {
   animation: shake 1.5s;
   transform-origin: center;
   transform: rotate(5deg);
