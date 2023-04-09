@@ -38,164 +38,199 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
     <link rel="stylesheet" href="css/form-checkout.css" />
+    <script src="js/form-check-out.js"></script>
   </head>
 
   <body>
     <div data-include="header.html"></div>
-    <div class="check-out-form">
-      <div class="check-out-information">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <form>
-                <div class="form-group">
-                  <label for="first-name">First Name *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="first-name"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="street-address">Street Address *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="street-address"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="apartment"
-                    >Apartment, floor, etc. (optional)</label
-                  >
-                  <input type="text" class="form-control" id="apartment" />
-                </div>
-                <div class="form-group">
-                  <label for="town-city">Town/City *</label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="town-city"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="phone-number">Phone Number *</label>
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="phone-number"
-                    required
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email">Email Address *</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="checkbox mt-3">
-                  <label
-                    ><input type="checkbox" value="" />Save this information for
-                    faster check-out next time</label
-                  >
-                </div>
-              </form>
+    <div class="content">
+      <div class="check-out-form">
+        <div class="check-out-information">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <form>
+                  <div class="form-group">
+                    <label for="first-name">First Name *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="first-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="street-address">Street Address *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="street-address"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="apartment"
+                      >Apartment, floor, etc. (optional)</label
+                    >
+                    <input type="text" class="form-control" id="apartment" />
+                  </div>
+                  <div class="form-group">
+                    <label for="town-city">Town/City *</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="town-city"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone-number">Phone Number *</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="phone-number"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      required
+                    />
+                  </div>
+                  <div class="checkbox mt-3">
+                    <label
+                      ><input type="checkbox" value="" />Save this information
+                      for faster check-out next time</label
+                    >
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- End div check-out-information -->
+        <!-- End div check-out-information -->
 
-      <!-- Start div check-out-method -->
-      <div class="check-out-method">
-        <table>
-          <td class="cart-product">
-            <tr>
-              <td>
-                <img
-                  src="img/github.jpg"
-                  alt="Product Image"
-                  width="55"
-                  height="55"
-                />
-              </td>
-              <td class="cart-product-name">HOT BOY BINH THUAN</td>
-              <td class="price">$99999999999</td>
-            </tr>
-            <tr>
-              <td>
-                <img
-                  src="img/Hotboy_PhuYen.jpg"
-                  alt="Product Image"
-                  width="55"
-                  height="55"
-                />
-              </td>
-              <td class="cart-product">TRAI DEP PHU YEN</td>
-              <td class="price">Tặng kèm</td>
-            </tr>
-            
-          </td>
-          <td>
-            <tr style="border-bottom: 2.3px solid #ccc">
-              <td>Subtotal:</td>
-              <td></td>
-              <td class="price">$1750</td>
-            </tr>
-            <tr style="border-bottom: 2.3px solid #ccc">
-              <td>Shipping:</td>
-              <td></td>
-              <td class="price">Free</td>
-            </tr>
-            <tr>
-              <td>Total:</td>
-              <td></td>
-              <td class="price">$1750</td>
-            </tr>
-          </td>
-        </table>
-        <!-- Start payment options -->
-        <div class="payment-options">
-          <input
-            type="radio"
-            name="payment"
-            value="bank"
-            id="bank"
-            checked
-            style="margin-right: 12px"
-          />
-          <label for="bank">
-            <i style="color: #02db67" class="fab fa-cc-discover"></i>
-            <i style="color: #dbca23" class="fab fa-cc-amex"></i>
-            <i style="color: #0d8fdb" class="fab fa-cc-paypal"></i>
-            <i style="color: #db3523" class="fab fa-cc-mastercard"></i>
-            <i style="color: #3500db" class="fab fa-cc-visa"></i>
-            Bank transfer
-          </label>
-          <br />
-          <input
-            type="radio"
-            name="payment"
-            value="cash"
-            id="cash"
-            style="margin-right: 12px; margin-top: 15px"
-          />
-          <label for="cash">Cash on delivery</label><br />
+        <!-- Start div check-out-method -->
+        <div class="check-out-method">
+          <table>
+            <td class="cart-product">
+              <tr>
+                <td>
+                  <img
+                    src="img/github.jpg"
+                    alt="Product Image"
+                    width="55"
+                    height="55"
+                  />
+                </td>
+                <td class="cart-product-name">HOT BOY BINH THUAN</td>
+                <td class="price">$99999999999</td>
+              </tr>
+              <tr>
+                <td>
+                  <img
+                    src="img/Hotboy_PhuYen.jpg"
+                    alt="Product Image"
+                    width="55"
+                    height="55"
+                  />
+                </td>
+                <td class="cart-product">TRAI DEP PHU YEN</td>
+                <td class="price">Tặng kèm</td>
+              </tr>
+            </td>
+            <td>
+              <tr style="border-bottom: 2.3px solid #ccc">
+                <td>Subtotal:</td>
+                <td></td>
+                <td class="price">$1750</td>
+              </tr>
+              <tr style="border-bottom: 2.3px solid #ccc">
+                <td>Shipping:</td>
+                <td></td>
+                <td class="price">Free</td>
+              </tr>
+              <tr>
+                <td>Total:</td>
+                <td></td>
+                <td class="price">$1750</td>
+              </tr>
+            </td>
+          </table>
+          <!-- Start payment options -->
+          <div class="payment-options">
+            <input
+              type="radio"
+              name="payment"
+              value="bank"
+              id="bank"
+              checked
+              style="margin-right: 12px"
+            />
+            <label for="bank">
+              <i style="color: #02db67" class="fab fa-cc-discover"></i>
+              <i style="color: #dbca23" class="fab fa-cc-amex"></i>
+              <i style="color: #0d8fdb" class="fab fa-cc-paypal"></i>
+              <i style="color: #db3523" class="fab fa-cc-mastercard"></i>
+              <i style="color: #3500db" class="fab fa-cc-visa"></i>
+              Bank transfer
+            </label>
+            <br />
+            <input
+              type="radio"
+              name="payment"
+              value="cash"
+              id="cash"
+              style="margin-right: 12px; margin-top: 15px"
+            />
+            <label for="cash">Cash on delivery</label><br />
+          </div>
+          <!-- End payment options -->
+          <button id="place-order">Place Order</button>
         </div>
-        <!-- End payment options -->
-        <button>Place Order</button>
+        <!-- End div check-out-method -->
       </div>
-      <!-- End div check-out-method -->
     </div>
     <!-- End div check-out-form -->
-    <div data-include="footer.html"></div>
+    <div class="footer" data-include="footer.html"></div>
+    <!-- Animation đặt hàng thành công -->
+    <div id="animation"></div>
+    <p id="success-message" style="display: none">ORDER PLACED SUCESSFULLY!!</p>
+    <script>
+      var animation = null;
+      var button = document.getElementById("place-order");
+      button.addEventListener("click", function () {
+        var content = document.querySelector(".content");
+        content.style.display = "none";
+        var footer = document.querySelector(".footer");
+        footer.style.display = "none";
+
+        if (animation == null) {
+          animation = bodymovin.loadAnimation({
+            container: document.getElementById("animation"),
+            renderer: "svg",
+            loop: false,
+            autoplay: true,
+            path: "animation-order-success.JSON",
+          });
+          setTimeout(function () {
+            var successMessage = document.getElementById("success-message");
+            successMessage.style.display = "block";
+          }, 1200); // hiển thị message thông báo sau 1 giây
+        } else {
+          animation.play();
+        }
+        animation.addEventListener("complete", function () {
+          console.log("animation hoàn thành");
+        });
+      });
+    </script>
     <script src="js/header-footer.js"></script>
   </body>
 </html>

@@ -109,3 +109,26 @@ button:hover {
 .check-out-form i:hover {
   cursor: pointer;
 }
+#animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+}
+#success-message {
+  position: absolute;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 75px;
+  white-space: nowrap;
+  font-family: "Poppins";
+  font-weight: 400;
+  background: linear-gradient(to right, #40e0d0, #ff8c00, #ff0080);
+  /* background-clip: text;
+	color: transparent; */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

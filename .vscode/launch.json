@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Danhsachhs",
+            "request": "launch",
+            "mainClass": "Danhsachhs",
+            "projectName": "5AnotMinus_5797e5ad"
+        },
+        {
+            "type": "java",
+            "name": "GiaodienHS",
+            "request": "launch",
+            "mainClass": "GiaodienHS",
+            "projectName": "5AnotMinus_5797e5ad"
+        },
+        {
+            "type": "java",
+            "name": "StudentTable",
+            "request": "launch",
+            "mainClass": "StudentTable",
+            "projectName": "5AnotMinus_5797e5ad"
+        },
+        {
+            "type": "java",
             "name": "LoginForm",
             "request": "launch",
             "mainClass": "LoginForm",
