@@ -303,3 +303,7 @@ body {
   line-height: 21px;
   padding-top: 8px;
 }
+
+.profile img:hover {
+  transform: scale(1.15);
+}

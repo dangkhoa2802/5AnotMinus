@@ -16,30 +16,65 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   </head>
   <body>
     <style>
-      textarea {
-        height: 200px;
-        width: 100%;
-        border: none;
-        outline: none;
-        font-size: 16px;
-        background: #f0f1f8;
-        border-radius: 6px;
-        padding: 50px 15px 0 15px; /* Giá trị padding-top là 50px */
-        line-height: 200px; /* Giá trị line-height bằng chiều cao của text area */
-        vertical-align: top; /* Đưa văn bản nhập vào lên đầu text area */
+      .quantity-box {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        width: 70px;
+        height: 35px;
       }
 
-      ::placeholder {
-        font-size: 16px;
-        color: #999;
+      .quantity-input {
+        flex: 1;
+        text-align: center;
+        width: 70px;
+        height: 35px;
+        border: 1.5px solid rgba(0, 0, 0, 0.4);
+        border-radius: 4px;
+      }
+      .quantity-button {
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        color: black;
+        border-radius: 4px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 20px;
+        border: none;
+        cursor: pointer;
       }
     </style>
 
-    <textarea placeholder="Enter your message"></textarea>
+    <div class="quantity-box">
+      <button class="quantity-button quantity-minus">-</button>
+      <input class="quantity-input" value="1" />
+      <button class="quantity-button quantity-plus">+</button>
+    </div>
+
+    <script>
+      const quantityBoxes = document.querySelectorAll(".quantity-box");
+
+      quantityBoxes.forEach((quantityBox) => {
+        const quantityInput = quantityBox.querySelector(".quantity-input");
+        const quantityMinus = quantityBox.querySelector(".quantity-minus");
+        const quantityPlus = quantityBox.querySelector(".quantity-plus");
+
+        quantityMinus.addEventListener("click", () => {
+          if (quantityInput.value > 1) {
+            quantityInput.value--;
+          } else {
+            quantityInput.value = 1;
+          }
+        });
+
+        quantityPlus.addEventListener("click", () => {
+          quantityInput.value++;
+        });
+      });
+    </script>
   </body>
 </html>
-TAo là Nhật Hoài, tao đẹp trai lắm
