@@ -40,7 +40,7 @@ body {
   content: "";
   position: absolute;
   height: 70%;
-  width: 2px;
+  width: 3px;
   right: -15px;
   top: 50%;
   transform: translateY(-50%);
@@ -62,7 +62,6 @@ body {
 }
 .content .left-side .details .text-one,
 .content .left-side .details .text-two {
- 
   text-decoration: none;
   font-size: 14px;
   color: #afafb6;
@@ -101,7 +100,7 @@ body {
 .input-box-email {
   flex-wrap: wrap;
 }
-.input-box-email input{
+.input-box-email input {
   width: 100%;
   border: none;
   outline: none;
@@ -134,7 +133,7 @@ body {
 }
 .right-side .button {
   display: flex;
-  margin-top: 12px;
+  margin-top: 13px;
   width: 100%;
   justify-content: end;
 }
@@ -190,21 +189,45 @@ body {
 /* Thêm hiệu ứng rung lắc cho icon */
 @keyframes shake {
   0% {
-    transform: rotate(0deg);
+    transform: translate(5px, 5px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-3px, -4px) rotate(-2deg);
+  }
+  20% {
+    transform: translate(-5px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(6px, 4px) rotate(0deg);
+  }
+  40% {
+    transform: translate(3px, -3px) rotate(2deg);
   }
   50% {
-    transform: rotate(30deg);
+    transform: translate(-3px, 4px) rotate(-2deg);
+  }
+  60% {
+    transform: translate(-3px, 3px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 3px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-3px, -3px) rotate(1deg);
+  }
+  90% {
+    transform: translate(3px, 3px) rotate(0deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: translate(3px, -3px) rotate(-1deg);
   }
 }
 
 /* Thiết lập animation cho icon */
-.fas.fa-phone-alt:hover, 
+.fas.fa-phone-alt:hover,
 .fas.fa-envelope:hover,
 .fas.fa-map-marker-alt:hover {
   animation: shake 1.5s;
   transform-origin: center;
-  transform: rotate(5deg);
+  animation-iteration-count: infinite;
 }
