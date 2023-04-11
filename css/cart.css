@@ -1,0 +1,203 @@
+
+.cart {
+  padding: 30px 135px 0 135px;
+}
+.cart img {
+  width: 55px;
+  height: 55px;
+}
+th,
+td {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+td .quantity-box {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 70px;
+  height: 35px;
+}
+
+.quantity-input {
+  flex: 1;
+  text-align: center;
+  width: 70px;
+  height: 35px;
+  border: 1.5px solid rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+.quantity-button {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
+.button-group2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 105px 0 135px;
+}
+.button-group2 button {
+  width: 218px;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: white;
+}
+.tao-khong-biet-nen-dat-ten-gi {
+  padding: 40px 105px 20px 135px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.coupon input {
+  width: 300px;
+  height: 56px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+}
+.coupon input[type="text"],
+.coupon input[type="text"]::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.5;
+  padding-left: 10px;
+}
+.coupon button {
+  width: 211px;
+  height: 58px;
+  background: #37d09d;
+  border-radius: 4px;
+  border: none;
+  margin-left: 16px;
+  color: #fafafa;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.cart-total-info {
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid #000000;
+  border-radius: 4px;
+  width: 470px;
+  height: 324px;
+}
+.cart-total-info > div:nth-child(-n + 2) {
+  padding: 24px 24px 0 28px;
+}
+.cart-total-title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+}
+.cart-total-price {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30em;
+}
+
+.cart-total-price > div {
+  justify-self: flex-start;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cart-total-price > div > p {
+  padding-bottom: 18px;
+}
+
+.cart-total-button {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-total-button button {
+  width: 260px;
+  height: 56px;
+  background: #37d09d;
+  border-radius: 4px;
+  border: none;
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #37d09d;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}

@@ -6,75 +6,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <style>
-      .quantity-box {
+      .cart-total-info {
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid #000000;
+        border-radius: 4px;
+        width: 470px;
+        height: 324px;
+      }
+      .cart-total-info > div:nth-child(-n + 2) {
+        padding: 20px 24px 0 28px;
+      }
+      .cart-total-title {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      .cart-total-price {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 19rem;
+      }
+
+      .cart-total-price > div {
+        justify-self: flex-start;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .cart-total-price > div > p {
+        padding-bottom: 18px;
+      }
+
+      .cart-total-button {
         display: flex;
         align-items: center;
-        justify-items: center;
-        width: 70px;
-        height: 35px;
+        justify-content: center;
       }
-
-      .quantity-input {
-        flex: 1;
-        text-align: center;
-        width: 70px;
-        height: 35px;
-        border: 1.5px solid rgba(0, 0, 0, 0.4);
+      .cart-total-button button {
+        width: 260px;
+        height: 56px;
+        background: #37d09d;
         border-radius: 4px;
-      }
-      .quantity-button {
-        width: 30px;
-        height: 30px;
-        background-color: white;
-        color: black;
-        border-radius: 4px;
-        text-align: center;
-        font-size: 20px;
-        line-height: 20px;
         border: none;
-        cursor: pointer;
+        color: #fafafa;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 24px;
+        font-family: "Poppins";
+        font-style: normal;
       }
     </style>
-
-    <div class="quantity-box">
-      <button class="quantity-button quantity-minus">-</button>
-      <input class="quantity-input" value="1" />
-      <button class="quantity-button quantity-plus">+</button>
+    <div class="cart-total-info">
+      <div class="cart-total-title">
+        <h3>Cart Total</h3>
+      </div>
+      <div class="cart-total-price">
+        <div>
+          <p>Subtotal</p>
+          <p>Shipping</p>
+          <p>Total</p>
+        </div>
+        <div>
+          <p>$1750</p>
+          <p>Free</p>
+          <p>$1750</p>
+        </div>
+      </div>
+      <div class="cart-total-button">
+        <button>Process to checkout</button>
+      </div>
     </div>
-
-    <script>
-      const quantityBoxes = document.querySelectorAll(".quantity-box");
-
-      quantityBoxes.forEach((quantityBox) => {
-        const quantityInput = quantityBox.querySelector(".quantity-input");
-        const quantityMinus = quantityBox.querySelector(".quantity-minus");
-        const quantityPlus = quantityBox.querySelector(".quantity-plus");
-
-        quantityMinus.addEventListener("click", () => {
-          if (quantityInput.value > 1) {
-            quantityInput.value--;
-          } else {
-            quantityInput.value = 1;
-          }
-        });
-
-        quantityPlus.addEventListener("click", () => {
-          quantityInput.value++;
-        });
-      });
-    </script>
   </body>
 </html>

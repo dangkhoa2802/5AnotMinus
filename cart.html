@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link href="css/cart.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
@@ -18,56 +19,10 @@
       href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="js/cart.js"></script>
   </head>
   <body>
-    <style>
-      .cart {
-        padding: 0 135px 0 135px;
-      }
-      .cart img {
-        width: 55px;
-        height: 55px;
-      }
-      th,
-      td {
-        font-family: "Poppins";
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 24px;
-        vertical-align: middle;
-      }
-
-      td .quantity-box {
-        display: flex;
-        align-items: center;
-        justify-items: center;
-        width: 70px;
-        height: 35px;
-      }
-
-      .quantity-input {
-        flex: 1;
-        text-align: center;
-        width: 70px;
-        height: 35px;
-        border: 1.5px solid rgba(0, 0, 0, 0.4);
-        border-radius: 4px;
-      }
-      .quantity-button {
-        width: 30px;
-        height: 30px;
-        background-color: white;
-        color: black;
-        border-radius: 4px;
-        text-align: center;
-        font-size: 20px;
-        line-height: 20px;
-        border: none;
-        cursor: pointer;
-      }
-    </style>
-    
+    <div data-include="header.html"></div>
     <div class="cart">
       <table class="table">
         <thead>
@@ -75,9 +30,7 @@
             <th scope="col">Product</th>
             <th scope="col">Image</th>
             <th scope="col" style="text-align: center">Price</th>
-            <th scope="col" style="text-align: center">
-              Quantity
-            </th>
+            <th scope="col" style="text-align: center">Quantity</th>
             <th scope="col" style="text-align: center">Subtotal</th>
           </tr>
         </thead>
@@ -107,26 +60,41 @@
         </tbody>
       </table>
     </div>
-    <script defer>
-        const quantityBoxes = document.querySelectorAll(".quantity-box");
-  
-        quantityBoxes.forEach((quantityBox) => {
-          const quantityInput = quantityBox.querySelector(".quantity-input");
-          const quantityMinus = quantityBox.querySelector(".quantity-minus");
-          const quantityPlus = quantityBox.querySelector(".quantity-plus");
-  
-          quantityMinus.addEventListener("click", () => {
-            if (quantityInput.value > 1) {
-              quantityInput.value--;
-            } else {
-              quantityInput.value = 0;
-            }
-          });
-  
-          quantityPlus.addEventListener("click", () => {
-            quantityInput.value++;
-          });
-        });
-      </script>
+
+    <div class="button-group2">
+      <button>Return To Shop</button>
+      <button>Update Cart</button>
+    </div>
+
+    <div class="tao-khong-biet-nen-dat-ten-gi">
+      <div class="coupon">
+        <input type="text" placeholder="Coupon Code" />
+        <button>Apply Coupon</button>
+      </div>
+      <div class="cart-total-info">
+        <div class="cart-total-title">
+          <h3>Cart Total</h3>
+        </div>
+        <div class="cart-total-price">
+          <div>
+            <p>Subtotal</p>
+            <p>Shipping</p>
+            <p>Total</p>
+          </div>
+          <div>
+            <p>$1750</p>
+            <p>Free</p>
+            <p>$1750</p>
+          </div>
+        </div>
+        <div class="cart-total-button">
+          <button>Process to checkout</button>
+        </div>
+      </div>
+    </div>
+    <span style="display: none" class="loader"></span>
+
+    <div data-include="footer.html"></div>
+    <script defer src="js/header-footer.js"></script>
   </body>
 </html>
