@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="css/cart.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/cart.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
@@ -22,12 +22,10 @@
     <script defer src="js/cart.js"></script>
   </head>
   <body>
-    <div data-include="header.html"></div>
-    <main>
     <div class="cart">
       <table class="table">
         <thead>
-          <tr class="my-3">
+          <tr>
             <th scope="col">Product</th>
             <th scope="col">Image</th>
             <th scope="col" style="text-align: center">Price</th>
@@ -36,7 +34,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="my-3">
+          <tr>
             <td>Hot boy Binh Thuan</td>
             <td><img src="img/github.jpg" alt="" /></td>
             <td style="text-align: center">$9999999999</td>
@@ -47,7 +45,7 @@
             </td>
             <td style="text-align: center">$9999999999</td>
           </tr>
-          <tr class="my-3">
+          <tr>
             <td>Trai dep Phu Yen</td>
             <td><img src="img/Hotboy_PhuYen.jpg" alt="" /></td>
             <td style="text-align: center">$550</td>
@@ -94,8 +92,5 @@
       </div>
     </div>
     <span style="display: none" class="loader"></span>
-  </main>
-    <div data-include="footer.html"></div>
-    <script defer src="js/header-footer.js"></script>
   </body>
 </html>
