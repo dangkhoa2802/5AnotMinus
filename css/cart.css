@@ -60,12 +60,20 @@ td .quantity-box {
   line-height: 24px;
   background-color: white;
 }
+
+.button-group2 button:hover {
+  background-color: #37d09d;
+  color:#fafafa
+}
 .tao-khong-biet-nen-dat-ten-gi {
   padding: 60px 105px 0 135px;
   display: flex;
   justify-content: space-between;
 }
-
+.tao-khong-biet-nen-dat-ten-gi button:hover {
+  background-color: #0b9768;
+  color:azure
+}
 .coupon input {
   width: 300px;
   height: 56px;
