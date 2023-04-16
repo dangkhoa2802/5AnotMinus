@@ -10,36 +10,34 @@
 
 /* css tăng giảm số lượng */
 .product-count {
-	margin-top: 15px; 
+  margin-top: 15px;
 }
 .product-count .qtyminus,
 .product-count .qtyplus {
-	width: 34px;
-    height: 34px;
-    background: #212529;
-    text-align: center;
-    font-size: 19px;
-    line-height: 36px;
-    color: #fff;
-    cursor: pointer;
+  width: 34px;
+  height: 34px;
+  background: #212529;
+  text-align: center;
+  font-size: 19px;
+  line-height: 36px;
+  color: #fff;
+  cursor: pointer;
 }
 .product-count .qtyminus {
-	border-radius: 3px 0 0 3px; 
+  border-radius: 3px 0 0 3px;
 }
 .product-count .qtyplus {
-	border-radius: 0 3px 3px 0; 
+  border-radius: 0 3px 3px 0;
 }
 .product-count .qty {
-	width: 60px;
-	text-align: center;
+  width: 60px;
+  text-align: center;
 }
-
 
 /* css tăng giảm số lượng */
 
-.policy{
+.policy {
   margin-top: 50px;
-
 }
 
 .grid {
@@ -47,7 +45,7 @@
   flex-direction: column;
   flex-flow: row wrap;
 }
-.grid > [class*=column-] {
+.grid > [class*="column-"] {
   display: block;
 }
 
@@ -71,19 +69,14 @@
   align-items: end;
 }
 
-
-
 .column-xs-12 {
   flex-basis: 100%;
   max-width: 100%;
 }
 
 @media (min-width: 48rem) {
-  
 }
 @media (min-width: 62rem) {
-  
-
   .column-md-4 {
     flex-basis: 33.3333333333%;
     max-width: 33.3333333333%;
@@ -94,16 +87,12 @@
     max-width: 41.6666666667%;
   }
 
-  
-
   .column-md-7 {
     flex-basis: 58.3333333333%;
     max-width: 58.3333333333%;
   }
-
 }
 @media (min-width: 75rem) {
-  
 }
 @supports (display: grid) {
   .grid {
@@ -111,12 +100,10 @@
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto;
   }
-  .grid > [class*=column-] {
+  .grid > [class*="column-"] {
     margin: 0;
     max-width: 100%;
   }
-
-  
 
   .column-xs-12 {
     grid-column-start: span 12;
@@ -124,11 +111,8 @@
   }
 
   @media (min-width: 48rem) {
-    
   }
   @media (min-width: 62rem) {
-    
-
     .column-md-4 {
       grid-column-start: span 4;
       grid-column-end: span 4;
@@ -139,23 +123,19 @@
       grid-column-end: span 5;
     }
 
-    
-
     .column-md-7 {
       grid-column-start: span 7;
       grid-column-end: span 7;
     }
-
-    
   }
   @media (min-width: 75rem) {
-    
   }
 }
 * {
   box-sizing: border-box;
 }
-*::before, *::after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -191,7 +171,10 @@ a.active {
   color: #333;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #333;
   font-weight: normal;
   margin: 1.75rem 0 1rem 0;
@@ -223,7 +206,7 @@ img {
   max-width: 100%;
   height: auto;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 nav {
@@ -257,8 +240,6 @@ nav li {
   margin: 0.5rem 0;
 } */
 
-
-
 #highlight {
   color: #333;
   font-size: 1.125rem;
@@ -269,8 +250,6 @@ nav li {
   margin: 0;
 }
 
-
-
 .description {
   border-top: 0.0625rem solid #e3dddd;
   margin: 2rem 0;
@@ -280,7 +259,7 @@ nav li {
 .add-to-cart {
   position: relative;
   display: inline-block;
-  background: #37D09D;
+  background: #37d09d;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -303,7 +282,7 @@ nav li {
   left: 0;
   right: 0;
   bottom: 0;
-  background: #7BD8B9;
+  background: #7bd8b9;
   transform: scaleX(0);
   transform-origin: 0 50%;
   transition: transform 0.3s ease-out;
@@ -316,7 +295,7 @@ nav li {
   width: 100%;
 }
 
-.grid > [class*=column-] {
+.grid > [class*="column-"] {
   padding: 1rem;
 }
 
@@ -324,7 +303,6 @@ nav li {
   border-bottom: 0.0625rem solid #e3dddd;
   padding: 0 0 1.5rem 0;
 }
-
 
 .product-image {
   display: none;
@@ -335,7 +313,8 @@ nav li {
 }
 
 @media (min-width: 62rem) {
-  .product-image img, .image-list img {
+  .product-image img,
+  .image-list img {
     width: 100%;
   }
 
@@ -374,8 +353,6 @@ nav li {
   /* nav ul {
     justify-content: flex-end;
   } */
-
-  
 }
 @-webkit-keyframes fadeImg {
   from {
@@ -392,4 +369,19 @@ nav li {
   to {
     opacity: 1;
   }
+}
+
+.square {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  line-height: 40px;
+  right: -60px;
+}
+.square i {
+  font-size: 22px;
 }
