@@ -1,0 +1,58 @@
+
+body {
+    overflow-x: hidden;
+  }
+  thead {
+    background-color: #37d09d;
+    border-radius: 12px;
+  }
+  thead button {
+    background-color: transparent;
+    border: none;
+  }
+  tr,td {
+    border-radius: 12px;
+  }
+  .grid-form {
+    display: flex;
+    gap: 35px;
+    width: 100vw;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-top: 40px;
+  }
+  .grid-first-component {
+    order: 1;
+    background-color: black;
+    border-top-right-radius: 15px;
+    display: flex;
+    width: 248px;
+    height: 100vh;
+    flex-direction: column;
+    align-items: end;
+  }
+  .grid-second-component {
+    width: 1151px;
+    order: 2;
+  }
+  .employee-function {
+    padding: 23px 10px 0 0;
+    
+  }
+  .employee-function button {
+    color: #fafaff;
+    background-color: transparent;
+    border: none;
+    padding-bottom: 15px;
+  }
+  .button-group {
+    text-align: center;
+  }
+  .button-group button {
+    border: none;
+    background-color: transparent;
+  }
+  .button-group img {
+    width: 27px;
+    height: 27px;
+  }
