@@ -1,0 +1,82 @@
+
+.product-form {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0 auto;
+    max-width: 800px;
+  }
+.tieude{
+    width: 1000px;
+    
+}
+.cell-1{
+    background-color: #DDDDDD;
+   
+}
+  .button-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+.head{
+    background-color: #37D09D;
+}
+
+.button-add {
+    background-image: url("img/add.png");
+    
+    
+  }
+  
+.button-edit{
+    background-image: url("img/edit.png");
+}
+  
+.button-delete{
+    background-image: url("img/delete.png");   
+}
+.huhucuu{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    background-color: black;
+    border-right: 30px;
+    
+}
+.button-group-1{
+    border-right: 30px;
+    background-color: black;
+    height: 671px;
+    border-width: 30px;
+
+
+}
+.btn1{
+    
+    border: none;
+    background-color: black;
+    color:aliceblue
+    
+    
+}
+.btn2{
+    border: none;
+    background-color: black;
+    color: aliceblue;
+}
+.btn3{
+    border: none;
+    background-color: black;
+    color: aliceblue;
+}
+.tong{
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+.tieude{
+    flex: 1;
+}
+.than{
+    flex: 1;
+}
