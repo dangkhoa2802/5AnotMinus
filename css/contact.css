@@ -100,7 +100,7 @@ body {
 .input-box-email {
   flex-wrap: wrap;
 }
-.input-box-email input {
+.input-box-email textarea {
   width: 100%;
   border: none;
   outline: none;
@@ -111,6 +111,7 @@ body {
   resize: none;
   box-sizing: border-box;
   line-height: 1.5;
+  height: 250px;
 }
 
 .input-box-email input::placeholder {
