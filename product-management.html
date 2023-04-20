@@ -77,7 +77,9 @@
               <td>1 year</td>
               <td>1000</td>
               <td class="button-group">
-                <button><img src="img/edit.png" alt="" /></button>
+                <button data-bs-toggle="modal" data-bs-target="#editModal">
+                  <img src="img/edit.png" alt="" />
+                </button>
                 <button><img src="img/delete.png" alt="" /></button>
               </td>
             </tr>
@@ -90,7 +92,9 @@
               <td>1 year</td>
               <td>1532</td>
               <td class="button-group">
-                <button><img src="img/edit.png" alt="" /></button>
+                <button data-bs-toggle="modal" data-bs-target="#editModal">
+                  <img src="img/edit.png" alt="" />
+                </button>
                 <button><img src="img/delete.png" alt="" /></button>
               </td>
             </tr>
@@ -116,12 +120,6 @@
               <h1 class="modal-title fs-5" id="exampleModalLabel">
                 Add new Product
               </h1>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
             </div>
             <div class="modal-body">
               <form>
@@ -171,5 +169,74 @@
         </div>
       </div>
     </div>
+    <!-- Modal sửa -->
+    <div
+      class="modal fade"
+      id="editModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                Edit Product
+              </h1>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="name">Name:</label>
+                  <input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                  <label for="categories">Categories of Good:</label>
+                  <select
+                    class="form-select"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="price">Price:</label>
+                  <input type="text" class="form-control" id="price" />
+                </div>
+                <div class="form-group">
+                  <label for="unit">Unit:</label>
+                  <input type="text" class="form-control" id="unit" />
+                </div>
+                <div class="form-group">
+                  <label for="warranty">Warranty:</label>
+                  <input type="text" class="form-control" id="warranty" />
+                </div>
+                <div class="form-group">
+                  <label for="quantity">Quantity:</label>
+                  <input type="text" class="form-control" id="quantity" />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-success">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Sửa -->
   </body>
 </html>

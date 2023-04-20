@@ -82,7 +82,7 @@
               <td>$120</td>
               <td>NV0803</td>
               <td class="button-group">
-                <button><img src="img/edit.png" alt="" /></button>
+                <button data-bs-toggle="modal" data-bs-target="#editModal"><img src="img/edit.png" alt="" /></button>
                 <button><img src="img/delete.png" alt="" /></button>
               </td>
             </tr>
@@ -92,6 +92,66 @@
       <!-- End grid 2 -->
     </div>
     <!-- End grid tổng -->
-    
+        <!-- Modal sửa -->
+        <div
+        class="modal fade"
+        id="editModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Edit Order
+                </h1>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-floating mb-3">
+                    <input type="date" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Time-remaining</label>
+                  </div>
+                  <div class="form-group">
+                    <label for="categories">Status:</label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1">Completed</option>
+                      <option value="2">Delivering</option>
+                    </select>
+                  </div>
+                  <div style="padding-top: 20px;" class="form-group">
+                    <label for="categories">Transporter: </label>
+                    <select
+                      class="form-select"
+                      aria-label="Default select example"
+                    >
+                      <option value="1">NV001</option>
+                      <option value="2">NV002</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="button" class="btn btn-success">
+                  Save changes
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Modal Sửa -->
   </body>
 </html>
